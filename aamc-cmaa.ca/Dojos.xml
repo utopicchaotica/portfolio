@@ -1,0 +1,158 @@
+<DOJOS>
+	<DOJO>
+		<ID>"L1"</ID>
+		<HREF>"#L1"</HREF>
+		<NOM>Karaté International</NOM>
+		<NAME>Karate International</NAME>
+		<LOGO>"img/logoDojo/KarateInternational.gif"</LOGO>
+		<SENSEI>Kyoshi Gilles Lavigne</SENSEI>
+		<SITEWEB>www.shotokan.ca</SITEWEB>
+		<EMAIL>Lavigne_150@sympatico.ca</EMAIL>
+		<ADRESSE>10-8 Chiasson, Gatineau (Qc), J8P 6V6</ADRESSE>
+		<TEL>(819)773-9348</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L2"</ID>
+		<HREF>"#L2"</HREF>
+		<NOM>Karaté Shotokan Chelsea</NOM>
+		<NAME>Chelsea Shotokan Karate</NAME>
+		<LOGO>"img/logoDojo/KarateChelsea.jpg"</LOGO>
+		<SENSEI>Shihan Jean-Pierre Groulx</SENSEI>
+		<SITEWEB> </SITEWEB>
+		<EMAIL>jp.groulx@sympatico.ca</EMAIL>
+		<ADRESSE>74 Chemin Old Chelsea, Chelsea (Qc), J9B 1K9</ADRESSE>
+		<TEL>(819)669-5827</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L3"</ID>
+		<HREF>"#L3"</HREF>
+		<NOM>Karaté Stéphane Lachapelle</NOM>
+		<NAME>Karate Stéphane Lachapelle</NAME>
+		<LOGO>"img/logoDojo/StephaneLachapelle.jpg"</LOGO>
+		<SENSEI>Renshi Stéphane Lachapelle</SENSEI>
+		<SITEWEB>www.karatestephanelachapelle.com</SITEWEB>
+		<EMAIL>stephanelachapelle@hotmail.com</EMAIL>
+		<ADRESSE>711 rue Eugène, Gracefield (Qc), J0X 1W0</ADRESSE>
+		<TEL> </TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L4"</ID>
+		<HREF>"#L4"</HREF>
+		<NOM>Shotokan International</NOM>
+		<NAME>Shotokan International</NAME>
+		<LOGO>"img/logoDojo/ShotokanOrleans.gif"</LOGO>
+		<SENSEI>Pascal Monette</SENSEI>
+		<SITEWEB>www.karateshotokan.ca</SITEWEB>
+		<EMAIL>sensei@karateshotokan.ca</EMAIL>
+		<ADRESSE>2159 rue Nantes, Orléans (Ontario)</ADRESSE>
+		<TEL>(819)210-3656</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L5"</ID>
+		<HREF>"#L5"</HREF>
+		<NOM>Karaté Shotokan</NOM>
+		<NAME>Karate Shotokan</NAME>
+		<LOGO>"img/logoDojo/SuzieClement.jpg"</LOGO>
+		<SENSEI>Suzie Clément</SENSEI>
+		<SITEWEB> </SITEWEB>
+		<EMAIL>suzieclement@hotmail.com</EMAIL>
+		<ADRESSE>4, rue Du Bosquet, Montpellier, Qc</ADRESSE>
+		<TEL>819-428-1441</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L6"</ID>
+		<HREF>"#L6"</HREF>
+		<NOM>Karaté Do LaCorne Barraute</NOM>
+		<NAME>Karaté Do LaCorne Barraute</NAME>
+		<LOGO>"img/logoDojo/KarateDoLaCorneBarraut.jpg"</LOGO>
+		<SENSEI>Ken Ouellet</SENSEI>
+		<SITEWEB> </SITEWEB>
+		<EMAIL>karatedolacorne@hotmail.com</EMAIL>
+		<ADRESSE> </ADRESSE>
+		<TEL>(819)724-2170</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L7"</ID>
+		<HREF>"#L7"</HREF>
+		<NOM>Odyssée Karaté</NOM>
+		<NAME>Odyssée Karate</NAME>
+		<LOGO>"img/logoDojo/OdysseeKarate.jpg"</LOGO>
+		<SENSEI>Nicolas Myre</SENSEI>
+		<SITEWEB>www.odysseekarate.com</SITEWEB>
+		<EMAIL>odysseekarate@yahoo.ca</EMAIL>
+		<ADRESSE>10-8 Chiasson, Gatineau (Qc), J8P 6V6</ADRESSE>
+		<TEL>(819)328-9470</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L8"</ID>
+		<HREF>"#L8"</HREF>
+		<NOM>Karaté Shotokan VDM</NOM>
+		<NAME>Karate Shotokan VDM</NAME>
+		<LOGO>"img/logoDojo/KarateVDM.jpg"</LOGO>
+		<SENSEI>Philippe Tremblay</SENSEI>
+		<SITEWEB>karatevdm.mon3w.fr</SITEWEB>
+		<EMAIL>shotokanvdm@hotmail.com</EMAIL>
+		<ADRESSE>Val Des Monts (Qc)</ADRESSE>
+		<TEL>(613)292-3111</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L9"</ID>
+		<HREF>"#L9"</HREF>
+		<NOM>Karaté Shotokan Cantley</NOM>
+		<NAME>Cantley Shotokan Karate</NAME>
+		<LOGO>"img/logoDojo/KarateShotokanCantley.jpg"</LOGO>
+		<SENSEI>Joël Deschênes</SENSEI>
+		<SITEWEB>www.karatecantley.ca</SITEWEB>
+		<EMAIL>karate.cantley@videotron.ca</EMAIL>
+		<ADRESSE>112 Rue du Commandeur, Cantley (Qc), J8V 3T5</ADRESSE>
+		<TEL>(819)827-9337</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L10"</ID>
+		<HREF>"#L10"</HREF>
+		<NOM>Karaté Shotokan Académie des Retraités de l'Outaouais</NOM>
+		<NAME>Karaté Shotokan Académie des Retraités de l'Outaouais</NAME>
+		<LOGO>"img/logoDojo/KarateShotokanARO.jpg"</LOGO>
+		<SENSEI>Michel Chartrand</SENSEI>
+		<SITEWEB> </SITEWEB>
+		<EMAIL>mic.chartrand@videotron.ca</EMAIL>
+		<ADRESSE>331, boul. Cité-des-Jeunes, Gatineau, Qc J8Y 6T3</ADRESSE>
+		<TEL>(819)827-2451</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L11"</ID>
+		<HREF>"#L11"</HREF>
+		<NOM>Karaté Moderne</NOM>
+		<NAME>Modern Karate</NAME>
+		<LOGO>"img/logoDojo/KarateModerne.jpg"</LOGO>
+		<SENSEI>Denis Gauthier</SENSEI>
+		<SITEWEB> </SITEWEB>
+		<EMAIL>senseidenis@hotmail.com</EMAIL>
+		<ADRESSE>420 rue Du Progrès, Masson-Angers (Qc)</ADRESSE>
+		<TEL>(819)568-8105</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L12"</ID>
+		<HREF>"#L12"</HREF>
+		<NOM>Centre de Karaté Amos</NOM>
+		<NAME>Centre de Karaté Amos</NAME>
+		<LOGO>"img/logoDojo/ChristianGelinas.jpg"</LOGO>
+		<SENSEI>Christian Gélinas</SENSEI>
+		<SITEWEB> </SITEWEB>
+		<EMAIL>gelinas.karate@hotmail.com</EMAIL>
+		<ADRESSE>662, 1ere rue Est, Amos,  Qc, J9T 2H6</ADRESSE>
+		<TEL>(819)442-0966</TEL>
+	</DOJO>
+	<DOJO>
+		<ID>"L13"</ID>
+		<HREF>"#L13"</HREF>
+		<NOM>Thériault Karaté Do</NOM>
+		<NAME>Thériault Karaté Do</NAME>
+		<LOGO>"img/logoDojo/JessicaTheriault.jpg"</LOGO>
+		<SENSEI>Jessica Thériault</SENSEI>
+		<SITEWEB> </SITEWEB>
+		<EMAIL>jessicatheriault19@hotmail.com</EMAIL>
+		<ADRESSE>712, 1ère Rue Est, Amos (Québec) J9T 2H8</ADRESSE>
+		<TEL>(819)732-5086</TEL>
+	</DOJO>
+</DOJOS>

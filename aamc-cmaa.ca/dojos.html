@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.72.0">
+    <title>Blog Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="lang-en mission">
+    <div class="container">
+        <header class="blog-header py-5">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <!-- <a class="link-secondary" href="#">Subscribe</a> -->
+                </div>
+                <div class="col-4 text-center">
+                    <h1><a class="text-dark site-name" href="#">A.A.M.C. &ndash; C.M.A.A.</a></h1>
+                    <p class="site-description">Association des Arts Martiaux du Canada &ndash; Canadian Martial Art Association</p>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="link-secondary" href="#" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+                            viewBox="0 0 24 24">
+                            <title>Search</title>
+                            <circle cx="10.5" cy="10.5" r="7.5" />
+                            <path d="M21 21l-5.2-5.2" />
+                        </svg>
+                    </a>
+                    <!-- <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
+                    <div class="toggle-lang nav">
+                        <a class="lang-fr p-2 link-secondary" href="#">FR</a>
+                        <a class="lang-en p-2 link-secondary" href="#">EN</a>
+                        <!-- <span class="divider p-2"> | </span> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-3 mb-4">
+            <nav class="nav d-flex justify-content-start">
+                <ul class="nav main-menu fr">
+                    <li class="nav-item p-2"><a class="link-secondary" href="index.html">Accueil</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="mission_f.html">Mission</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="#">Dojos</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="events_f.html">Événements</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="#">Photos</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="links_f.html">Liens</a></li>
+                </ul>
+                <ul class="nav main-menu en">
+                    <li class="nav-item p-2"><a class="link-secondary" href="index.html">Home</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="mission_e.html">Mission</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="dojos_e.html">Dojos</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="events_e.html">Events</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="#">Photos</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="links_e.html">Links</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="main container">
+        <div class="row">
+            <!-- <div class="col-md-8"> -->
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Dojos</h2>
+<script type="text/javascript">
+    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+    }
+    else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("GET", "Dojos.xml", false);
+    xmlhttp.send();
+    xmlDoc = xmlhttp.responseXML;
+
+    var TableT = "<table align='left' summary='Nos dojos' border='0' width='100%' cellpadding='1' cellspacing='1'>";
+    var ImageT = "alt='logo' height='125'/>";
+    var re = 0;
+    var rx = 0;
+    var j = 0;
+    var x = xmlDoc.getElementsByTagName("DOJO");
+
+    document.write(TableT);
+    document.write("<tr>");
+
+    for (i = 0; i < x.length; i++) {
+        document.write("<td><a href=");
+        document.write(x[i].getElementsByTagName("HREF")[0].childNodes[0].nodeValue);
+        document.write("><img src=");
+        document.write(x[i].getElementsByTagName("LOGO")[0].childNodes[0].nodeValue);
+        document.write(ImageT);
+        document.write("</a></td>");
+
+        re++;
+        if (re == 6) {
+            re = 0;
+            document.write("</tr><tr>");
+            for (j = rx; j < i + 1; j++) {
+                document.write("<td>");
+                document.write(x[j].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
+                document.write("</td>");
+            }
+            rx = j;
+            document.write("</tr><tr>");
+        }
+    }
+
+    document.write("</tr><tr>");
+    for (j = rx; j < i; j++) {
+        document.write("<td>");
+        document.write(x[j].getElementsByTagName("NOM")[0].childNodes[0].nodeValue);
+        document.write("</td>");
+    }
+    document.write("</tr></table>");
+</script>
+
+<p>&nbsp;</p>
+<h2>Dojos localization</h2>
+<p>Dojos associated with the AAMC are shown below, if you would like to visit a dojo, you can see the contact
+    information by clicking on the dojo marker.
+    <br />If you are in instructor who is part of the AAMC and your dojo is not shown, please send an email to:<a
+        href="mailto:info@AAMC-CMAA.ca"> info@AAMC-CMAA.ca</a><br>
+</p>
+<iframe width="900" height="650" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+    src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;oe=UTF8&amp;msa=0&amp;msid=214468881103161674901.0004b40e8f21bd3ab40e4&amp;t=h&amp;vpsrc=0&amp;ll=45.775186,-75.758972&amp;spn=1.245189,2.469177&amp;z=9&amp;output=embed"></iframe><br /><small>View
+    <a href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;oe=UTF8&amp;msa=0&amp;msid=214468881103161674901.0004b40e8f21bd3ab40e4&amp;t=h&amp;vpsrc=0&amp;ll=45.775186,-75.758972&amp;spn=1.245189,2.469177&amp;z=9&amp;source=embed"
+        style="color:#0000FF;text-align:left">AAMC - CMAA</a> in a larger map</small>
+<p>&nbsp;<br /></p>
+
+<script type="text/javascript">
+    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+    }
+    else {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("GET", "Dojos.xml", false);
+    xmlhttp.send();
+    xmlDoc = xmlhttp.responseXML;
+
+    var TableT2 = "<table align='left' summary='Nos dojos' border='1' width='100%' cellpadding='5' cellspacing='5'>";
+    var ImageT2 = "alt='logo' height='100'/>";
+    var x = xmlDoc.getElementsByTagName("DOJO");
+
+    document.write(TableT2);
+    document.write("<thead align='left'><tr>");
+    document.write("<th scope='col' width=20%>Logo</th>");
+    document.write("<th scope='col' width=20%>Name of dojo and Sensei</th>");
+    document.write("<th scope='col' width=60%>Information</th>");
+    document.write("</tr></thead><tbody><tr>");
+
+    for (i = 0; i < x.length; i++) {
+        document.write("<td><a name=");
+        document.write(x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue);
+        document.write("><img src=");
+        document.write(x[i].getElementsByTagName("LOGO")[0].childNodes[0].nodeValue);
+        document.write(ImageT2);
+        document.write("</a></td>");
+
+        document.write("<td><h4>");
+        document.write(x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
+        document.write("</h4>");
+        document.write("<br/>");
+        document.write(x[i].getElementsByTagName("SENSEI")[0].childNodes[0].nodeValue);
+        document.write("</td>");
+
+        document.write("<td>");
+        document.write("<a target=new, href='http://");
+        document.write(x[i].getElementsByTagName("SITEWEB")[0].childNodes[0].nodeValue);
+        document.write("'>");
+        document.write(x[i].getElementsByTagName("SITEWEB")[0].childNodes[0].nodeValue);
+        document.write("</a><br/><a href='mailto:");
+        document.write(x[i].getElementsByTagName("EMAIL")[0].childNodes[0].nodeValue);
+        document.write("'>");
+        document.write(x[i].getElementsByTagName("EMAIL")[0].childNodes[0].nodeValue);
+        document.write("</a><br/>");
+        document.write(x[i].getElementsByTagName("ADRESSE")[0].childNodes[0].nodeValue);
+        document.write("<br/>");
+        document.write(x[i].getElementsByTagName("TEL")[0].childNodes[0].nodeValue);
+        document.write("</td>");
+        document.write("<tr></tr>");
+    }
+    document.write("</tr></tbody></table>");
+</script>
+                </div>
+            <!-- </div> -->
+
+        </div><!-- /.row -->
+    </main><!-- /.container -->
+
+    <footer class="blog-footer">
+        <p>© Copyright 2022 AAMC-CMAA.ca. Designed by <a href="utopicchaotica.net">Utopic Chaotica</a>.</p><p>Pour nour contacter <a href="">info@AAMC-CMAA.ca</a>.</p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function () {
+    $('.toggle-lang a').click(function () {
+        var $x = $(this).text();
+        // console.log($x);
+        switch ($x) {
+            case 'FR':
+                $('body').removeClass('lang-en');
+                $('body').addClass('lang-fr');
+                break;
+            case 'EN':
+                $('body').removeClass('lang-fr');
+                $('body').addClass('lang-en');
+                break;
+            default:
+                break;
+        }
+    });
+});
+</script>
+</body>
+</html>
