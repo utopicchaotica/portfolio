@@ -177,6 +177,17 @@ body.lang-en .toggle-lang .lang-fr {
 }
 
 /*
+* Main
+*/
+body.home.lang-fr .main .en {
+  display: none;
+}
+
+body.home.lang-en .main .fr {
+  display: none;
+}
+
+/*
 * Blog posts
 */
 .blog-post {

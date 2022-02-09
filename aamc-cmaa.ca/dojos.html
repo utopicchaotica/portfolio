@@ -58,19 +58,19 @@
             <nav class="nav d-flex justify-content-start">
                 <ul class="nav main-menu fr">
                     <li class="nav-item p-2"><a class="link-secondary" href="index.html">Accueil</a></li>
-                    <li class="nav-item p-2"><a class="link-secondary" href="mission_f.html">Mission</a></li>
-                    <li class="nav-item p-2"><a class="link-secondary" href="#">Dojos</a></li>
-                    <li class="nav-item p-2"><a class="link-secondary" href="events_f.html">Événements</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="mission.html">Mission</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="dojos.html">Dojos</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="events.html">Événements</a></li>
                     <li class="nav-item p-2"><a class="link-secondary" href="#">Photos</a></li>
-                    <li class="nav-item p-2"><a class="link-secondary" href="links_f.html">Liens</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="links.html">Liens</a></li>
                 </ul>
                 <ul class="nav main-menu en">
                     <li class="nav-item p-2"><a class="link-secondary" href="index.html">Home</a></li>
-                    <li class="nav-item p-2"><a class="link-secondary" href="mission_e.html">Mission</a></li>
-                    <li class="nav-item p-2"><a class="link-secondary" href="dojos_e.html">Dojos</a></li>
-                    <li class="nav-item p-2"><a class="link-secondary" href="events_e.html">Events</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="mission.html">Mission</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="dojos.html">Dojos</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="events.html">Events</a></li>
                     <li class="nav-item p-2"><a class="link-secondary" href="#">Photos</a></li>
-                    <li class="nav-item p-2"><a class="link-secondary" href="links_e.html">Links</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="links.html">Links</a></li>
                 </ul>
             </nav>
         </div>
@@ -79,7 +79,73 @@
     <main class="main container">
         <div class="row">
             <!-- <div class="col-md-8"> -->
-                <div class="blog-post">
+                <div class="blog-post fr">
+                    <h2 class="blog-post-title">Localisation des dojos</h2>
+                    <p>Sur la carte Google ci dessous vous trouverez l’emplacement de chacun des dojos membres de l’AAMC.
+      <br/>Si vous êtes un instructeur membre de l’AAMC et que votre dojo n’apparait pas la carte, veuillez SVP nous en avertir par courriel à l’adresse suivante: <a href="mailto:info@AAMC-CMAA.ca"> info@AAMC-CMAA.ca</a><br></p>
+      <iframe width="900" height="650" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=fr-ca&amp;oe=UTF8&amp;msa=0&amp;msid=214468881103161674901.0004b40e8f21bd3ab40e4&amp;t=h&amp;vpsrc=0&amp;ll=45.775186,-75.758972&amp;spn=1.245189,2.469177&amp;z=9&amp;output=embed"></iframe><br /><small>View <a href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=fr-ca&amp;oe=UTF8&amp;msa=0&amp;msid=214468881103161674901.0004b40e8f21bd3ab40e4&amp;t=h&amp;vpsrc=0&amp;ll=45.775186,-75.758972&amp;spn=1.245189,2.469177&amp;z=9&amp;source=embed" style="color:#0000FF;text-align:left">AAMC - CMAA</a> in a larger map</small>
+      <p>&nbsp;<br/></p>
+
+		<script type="text/javascript">
+		  if (window.XMLHttpRequest)
+			 {// code for IE7+, Firefox, Chrome, Opera, Safari
+			 xmlhttp=new XMLHttpRequest();
+			 }
+		  else
+			 {// code for IE6, IE5
+			 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			 }
+		  xmlhttp.open("GET","Dojos.xml",false);
+		  xmlhttp.send();
+		  xmlDoc=xmlhttp.responseXML;
+
+		  var TableT2="<table align='left' summary='Nos dojos' border='1' width='100%' cellpadding='5' cellspacing='5'>";
+		  var ImageT2="alt='logo' height='100'/>";
+		  var x=xmlDoc.getElementsByTagName("DOJO");
+
+		  document.write(TableT2);
+		  document.write("<thead align='left'><tr>");
+        document.write("<th scope='col' width=20%>Logo</th>");
+        document.write("<th scope='col' width=20%>Nom du dojo et du Sensei</th>");
+        document.write("<th scope='col' width=60%>Information</th>");
+        document.write("</tr></thead><tbody><tr>");
+
+		  for (i=0;i<x.length;i++)
+		  {
+			 document.write("<td><a name=");
+			 document.write(x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue);
+			 document.write("><img src=");
+			 document.write(x[i].getElementsByTagName("LOGO")[0].childNodes[0].nodeValue);
+			 document.write(ImageT2);
+			 document.write("</a></td>");
+
+			 document.write("<td><h4>");
+			 document.write(x[i].getElementsByTagName("NOM")[0].childNodes[0].nodeValue);
+			 document.write("</h4>");
+			 document.write("<br/>");
+			 document.write(x[i].getElementsByTagName("SENSEI")[0].childNodes[0].nodeValue);
+			 document.write("</td>");
+
+			 document.write("<td>");
+			 document.write("<a target=new, href='http://");
+			 document.write(x[i].getElementsByTagName("SITEWEB")[0].childNodes[0].nodeValue);
+			 document.write("'>");
+			 document.write(x[i].getElementsByTagName("SITEWEB")[0].childNodes[0].nodeValue);
+			 document.write("</a><br/><a href='mailto:");
+			 document.write(x[i].getElementsByTagName("EMAIL")[0].childNodes[0].nodeValue);
+			 document.write("'>");
+			 document.write(x[i].getElementsByTagName("EMAIL")[0].childNodes[0].nodeValue);
+			 document.write("</a><br/>");
+			 document.write(x[i].getElementsByTagName("ADRESSE")[0].childNodes[0].nodeValue);
+			 document.write("<br/>");
+			 document.write(x[i].getElementsByTagName("TEL")[0].childNodes[0].nodeValue);
+			 document.write("</td>");
+			 document.write("<tr></tr>");
+		  }
+		  document.write("</tr></tbody></table>");
+		</script>
+                </div>
+                <div class="blog-post en">
                     <h2 class="blog-post-title">Dojos</h2>
 <script type="text/javascript">
     if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari

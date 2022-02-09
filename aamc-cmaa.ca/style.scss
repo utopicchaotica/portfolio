@@ -204,6 +204,16 @@ body.lang-en {
 } //.blog-pagination
 
 /*
+* Main
+*/
+body.home.lang-fr .main .en {
+    display: none;
+}
+body.home.lang-en .main .fr {
+    display: none;
+}
+
+/*
 * Blog posts
 */
 .blog-post {
