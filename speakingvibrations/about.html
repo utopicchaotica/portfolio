@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.72.0">
+    <title>Blog Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="lang-en about">
+    <div class="container">
+        <header class="blog-header py-5">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <!-- <a class="link-secondary" href="#">Subscribe</a> -->
+                </div>
+                <div class="col-4 text-center">
+                    <h1><a class="text-dark site-name" href="#">Speaking Vibrations</a></h1>
+                    <p class="site-description"></p>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <div class="toggle-dark-mode">
+                        <a class="link-secondary" href="#" aria-label="Dark Mode" data-dark-mode="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-lightbulb collapse" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="link-secondary" href="#" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+                            viewBox="0 0 24 24">
+                            <title>Search</title>
+                            <circle cx="10.5" cy="10.5" r="7.5" />
+                            <path d="M21 21l-5.2-5.2" />
+                        </svg>
+                    </a>
+                    <!-- <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
+                    <div class="toggle-lang nav collapse">
+                        <a class="lang-fr p-2 link-secondary" href="#">FR</a>
+                        <a class="lang-en p-2 link-secondary" href="#">EN</a>
+                        <!-- <span class="divider p-2"> | </span> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-3 mb-4">
+            <nav class="nav d-flex justify-content-start">
+                <ul class="nav main-menu fr">
+                    <li class="nav-item current-page p-2"><a class="link-secondary" href="index.html">Accueil</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="about.html">About</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="#">Photos</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="press.html">Press</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="links.html">Liens</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="#">Contact</a></li>
+                </ul>
+                <ul class="nav main-menu en">
+                    <li class="nav-item current-page p-2"><a class="link-secondary" href="index.html">Home</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="about.html">About</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="#">Photos</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="press.html">Press</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="links.html">Links</a></li>
+                    <li class="nav-item p-2"><a class="link-secondary" href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="main container">
+        <div class="team-bios">
+            <div class="row">
+                <div class="col-lg-12 page-title-container">
+                    <h2 class="page-title">The Team</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="bio-pic rounded-circle" src="/dist/img/bio-square-joanne.jpg" alt="">
+                    <h3>Jo-Anne Bryan</h3>
+                    <p>Lorem ipsum dolor sit amet. Ea provident debitis non atque laborum et exercitationem nesciunt et natus minus
+                        qui unde
+                        voluptatum ut dolor repellat. Et odit quasi At facere nisi qui perspiciatis amet et molestiae eveniet id
+                        distinctio
+                        Quis. In deleniti aspernatur qui odio velit et sint quia cum incidunt galisum aut quod similique ad dolores
+                        quia a
+                        architecto eaque?</p>
+                    <p><a class="btn btn-secondary" href="#">Read more »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="bio-pic rounded-circle" src="/dist/img/bio-square-carmelle.jpg" alt="">
+                    <h3>Carmelle Cachero</h3>
+                    <p>Lorem ipsum dolor sit amet. Ea provident debitis non atque laborum et exercitationem nesciunt et natus minus
+                        qui unde voluptatum ut dolor repellat. Et odit quasi At facere nisi qui perspiciatis amet et molestiae
+                        eveniet id distinctio Quis. In deleniti aspernatur qui odio velit et sint quia cum incidunt galisum aut quod
+                        similique ad dolores quia a architecto eaque?</p>
+                    <p><a class="btn btn-secondary" href="#">Read more »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="bio-pic rounded-circle" src="/dist/img/bio-square-king.jpg" alt="">
+                    <h3>King Kimbit</h3>
+                    <p>Lorem ipsum dolor sit amet. Ea provident debitis non atque laborum et exercitationem nesciunt et natus minus qui unde voluptatum ut dolor repellat. Et odit quasi At facere nisi qui perspiciatis amet et molestiae eveniet id distinctio Quis. In deleniti aspernatur qui odio velit et sint quia cum incidunt galisum aut quod similique ad dolores quia a architecto eaque?</p>
+                    <p><a class="btn btn-secondary" href="#">Read more »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="bio-pic rounded-circle" src="/dist/img/bio-square-jordan.jpg" alt="">
+                    <h3>Jordan Samonas</h3>
+                    <p>Lorem ipsum dolor sit amet. Ea provident debitis non atque laborum et exercitationem nesciunt et natus minus qui unde
+                        voluptatum ut dolor repellat. Et odit quasi At facere nisi qui perspiciatis amet et molestiae eveniet id distinctio
+                        Quis. In deleniti aspernatur qui odio velit et sint quia cum incidunt galisum aut quod similique ad dolores quia a
+                        architecto eaque?</p>
+                    <p><a class="btn btn-secondary" href="#">Read more »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777" style="--darkreader-inline-fill: #5a6165;"
+                            data-darkreader-inline-fill=""></rect><text x="50%" y="50%" fill="#777" dy=".3em"
+                            style="--darkreader-inline-fill: #9d9488;" data-darkreader-inline-fill="">140x140</text>
+                    </svg>
+                    <h3>Jacqui du Toit</h3>
+                    <p>Lorem ipsum dolor sit amet. Ea provident debitis non atque laborum et exercitationem nesciunt et natus minus qui unde
+                        voluptatum ut dolor repellat. Et odit quasi At facere nisi qui perspiciatis amet et molestiae eveniet id distinctio
+                        Quis. In deleniti aspernatur qui odio velit et sint quia cum incidunt galisum aut quod similique ad dolores quia a
+                        architecto eaque?</p>
+                    <p><a class="btn btn-secondary" href="#">Read more »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg"
+                        role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777" style="--darkreader-inline-fill: #5a6165;"
+                            data-darkreader-inline-fill=""></rect><text x="50%" y="50%" fill="#777" dy=".3em"
+                            style="--darkreader-inline-fill: #9d9488;" data-darkreader-inline-fill="">200x200</text>
+                    </svg>
+                    <h3>Pamela Witcher</h3>
+                    <p>Lorem ipsum dolor sit amet. Ea provident debitis non atque laborum et exercitationem nesciunt et natus minus
+                        qui unde
+                        voluptatum ut dolor repellat. Et odit quasi At facere nisi qui perspiciatis amet et molestiae eveniet id
+                        distinctio
+                        Quis. In deleniti aspernatur qui odio velit et sint quia cum incidunt galisum aut quod similique ad dolores
+                        quia a
+                        architecto eaque?</p>
+                    <p><a class="btn btn-secondary" href="#">Read more »</a></p>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.team-bios -->
+    </main><!-- /.container -->
+
+    <footer class="blog-footer mt-auto">
+        <p>&copy; Copyright 2022 Speaking Vibrations. Designed by <a href="utopicchaotica.net">Utopic Chaotica</a>.</p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function () {
+    $('.toggle-lang a').click(function () {
+        var $x = $(this).text();
+        // console.log($x);
+        switch ($x) {
+            case 'FR':
+                $('body').removeClass('lang-en');
+                $('body').addClass('lang-fr');
+                break;
+            case 'EN':
+                $('body').removeClass('lang-fr');
+                $('body').addClass('lang-en');
+                break;
+            default:
+                break;
+        }
+    });
+    $('.toggle-dark-mode a').click(function () {
+        var $x = $(this).data("dark-mode");
+        // console.log($x);
+        switch ($x) {
+            case true: //disable dark mode
+            case "true":
+                $('body').removeClass('dark-mode');
+                $(this).data("dark-mode",false);
+                $(this).children('.bi-lightbulb-fill').toggleClass('collapse');
+                $(this).children('.bi-lightbulb').toggleClass('collapse');
+                // console.log('removing dark mode!')
+                break;
+            case false:
+            case "false": //enable dark mode
+                $('body').addClass('dark-mode');
+                $(this).data("dark-mode",true);
+                $(this).children('.bi-lightbulb-fill').toggleClass('collapse');
+                $(this).children('.bi-lightbulb').toggleClass('collapse');
+                // console.log('changing to dark mode!')
+                break;
+            default:
+                // console.log('default break');
+                break;
+        }
+    });
+});
+</script>
+</body>
+</html>

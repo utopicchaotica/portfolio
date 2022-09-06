@@ -282,22 +282,26 @@ jQuery(document).ready(function () {
     });
     $('.toggle-dark-mode a').click(function () {
         var $x = $(this).data("dark-mode");
-        console.log($x);
+        // console.log($x);
         switch ($x) {
             case true: //disable dark mode
             case "true":
                 $('body').removeClass('dark-mode');
                 $(this).data("dark-mode",false);
-                console.log('removing dark mode!')
+                $(this).children('.bi-lightbulb-fill').toggleClass('collapse');
+                $(this).children('.bi-lightbulb').toggleClass('collapse');
+                // console.log('removing dark mode!')
                 break;
             case false:
             case "false": //enable dark mode
                 $('body').addClass('dark-mode');
                 $(this).data("dark-mode",true);
-                console.log('changing to dark mode!')
+                $(this).children('.bi-lightbulb-fill').toggleClass('collapse');
+                $(this).children('.bi-lightbulb').toggleClass('collapse');
+                // console.log('changing to dark mode!')
                 break;
             default:
-                console.log('default break');
+                // console.log('default break');
                 break;
         }
     });

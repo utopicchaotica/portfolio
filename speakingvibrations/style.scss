@@ -8,6 +8,10 @@ $very-light-grey: #e5e5e5;
 $dark-grey: rgb(52, 58, 64);
 $bluish-white: #f8f9fa;
 
+body {
+    transition: background-color 1s ease-out 100ms;
+}
+
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -43,6 +47,11 @@ $bluish-white: #f8f9fa;
         text-decoration: underline;
     } //&:hover
 } //.site-name
+
+.page-title {
+    text-transform: uppercase;
+    font-size: 2.75rem;
+}
 
 h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -181,6 +190,7 @@ body.dark-mode {
     // color: rgb(209, 205, 199);
     color: rgb(195, 190, 182) !important;
     background-color: rgb(24, 26, 27);
+    transition: background-color .25s ease-out 100ms;
     
     .text-dark {
         color: rgb(195, 190, 182) !important;
@@ -261,11 +271,47 @@ body.dark-mode {
 /*
 * Main
 */
+// .main {
+//     padding-top: 2rem;
+// }
+// body.home {
+//     .main {
+//         padding-top: 0;
+//     }
+// }
 body.home.lang-fr .main .en {
     display: none;
 }
 body.home.lang-en .main .fr {
     display: none;
+}
+
+/* About Page */
+body.about {
+    h3 {
+        padding: 1rem 0 .5rem;
+    }
+    .page-title {
+        margin-bottom: 0;
+    }
+
+    .team-bios {
+        .row {
+            padding: 1rem 0;
+        }
+
+        [class^='col-lg'] {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+        .page-title-container {
+            padding-bottom: 0;
+        }
+        
+        .bio-pic {
+            width: 200px;
+        }
+    }
 }
 
 /*
