@@ -1,0 +1,320 @@
+/* COLOURS */
+$strong-red: #ca0020;
+$very-dark-navy: #000033;
+$dark-lime-green: #509b4e;
+$cream: #fffdd0;
+$very-light-yellow: #fffa84;
+$very-light-grey: #e5e5e5;
+$dark-grey: rgb(52, 58, 64);
+$bluish-white: #f8f9fa;
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} //.bd-placeholder-img
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+    line-height: 1;
+    border-bottom: 1px solid $very-light-grey;
+
+    > .row {
+        padding-top: .5rem;
+    }
+} //.blog-header
+
+.site-name {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    } //&:hover
+} //.site-name
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    @media (min-width: 768px) {
+        font-size: 3rem;
+    } //@media (min-width: 768px)
+} //.display-4
+
+
+.nav-scroller {
+    border-bottom: 1px solid $very-light-grey;
+    position: relative;
+    z-index: 2;
+    height: 3.5rem;
+    // height: 4rem;
+    // height: 2.75rem;
+    overflow-y: hidden;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+
+    .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    } //.nav
+
+    .nav-link {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-size: .875rem;
+    } //.nav-link
+
+    .main-menu {
+        padding-bottom: 0;
+    } //.main-menu
+} //.nav-scroller
+
+.main-menu {
+    .nav-item {
+        padding: 1rem .5rem !important;
+        transition: background-color .5s ease-out 100ms;
+
+        a {
+            text-decoration: none;
+        } //a
+
+        &:hover {
+            background-color: $very-light-grey !important;
+            padding-bottom: .2rem !important;
+            border-bottom: 6px $dark-grey solid;
+            // a {
+            //     text-decoration: underline;
+            // } //a
+        } //&:hover
+
+        &:nth-child(2n):hover {
+            border-bottom: 6px $strong-red solid;
+        } //&:hover
+        &:nth-child(3n):hover {
+            border-bottom: 6px $very-dark-navy solid;
+        } //&:hover
+        &:nth-child(4n):hover {
+            border-bottom: 6px $dark-lime-green solid;
+        } //&:hover
+        &:nth-child(5n):hover {
+            border-bottom: 6px $very-light-yellow solid;
+        }
+
+        &.current-page {
+            background-color: rgb(248, 249, 250);
+            color: rgb(73, 79, 84);
+        }
+    } //.nav-item
+} //.main-menu
+
+
+.toggle-lang {
+    // margin-left: auto;
+    margin-top: -1px;
+
+    a {
+        display: block;
+        // padding: .75rem 0;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $very-light-grey;
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        height: 1rem;
+    }
+
+    .lang-fr {
+        display: none;
+    }
+
+    // .divider {
+    //     display: block;
+    //     margin-top: -2px;
+    // }
+} //.toggle-lang
+
+body.lang-fr {
+    .main-menu.en {
+        display: none;
+    }
+    .toggle-lang {
+        .lang-en { display: block; }
+        .lang-fr { display: none; }
+    }
+}
+body.lang-en {
+    .main-menu.fr {
+        display: none;
+    }
+    .toggle-lang {
+        .lang-en { display: none; }
+        .lang-fr { display: block; }
+    }
+}
+
+body.dark-mode {
+    // color: rgb(209, 205, 199);
+    color: rgb(195, 190, 182) !important;
+    background-color: rgb(24, 26, 27);
+    
+    .text-dark {
+        color: rgb(195, 190, 182) !important;
+    }
+    
+    .bg-light {
+        background-color: $dark-grey !important;
+    }
+
+    .blog-footer {
+        background-color: rgb(24, 26, 27);
+    }
+}
+
+.card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+} //.card-img-right
+
+.flex-auto {
+    flex: 0 0 auto;
+} //.flex-auto
+
+.h-250 {
+    height: 250px;
+} //.h-250
+
+@media (min-width: 768px) {
+    .h-md-250 {
+        height: 250px;
+    }
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+} //.carousel
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+
+    p {
+        @media (min-width: 40em) { /* Bump up size of carousel content */
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
+    }
+} //.carousel-caption
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+
+    &>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 32rem;
+    } //&>img
+} //.carousel-item
+
+/* Pagination */
+.blog-pagination {
+    margin-bottom: 4rem;
+
+    &>.btn {
+        border-radius: 2rem;
+    } //&>.btn
+} //.blog-pagination
+
+/*
+* Main
+*/
+body.home.lang-fr .main .en {
+    display: none;
+}
+body.home.lang-en .main .fr {
+    display: none;
+}
+
+/*
+* Blog posts
+*/
+.blog-post {
+    margin-bottom: 4rem;
+} //.blog-post
+
+body.lang-fr .blog-post.en {
+    display: none;
+}
+
+body.lang-en .blog-post.fr {
+    display: none;
+}
+
+.blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+} //.blog-post-title
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #727272;
+} //.blog-post-meta
+
+/*
+* Footer
+*/
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #727272;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid $very-light-grey;
+
+    p:last-child {
+        margin-bottom: 0;
+    } //p:last-child
+} //.blog-footer
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+// @media (min-width: 40em) {
+//     /* Bump up size of carousel content */
+//     .carousel-caption p {
+//     margin-bottom: 1.25rem;
+//     font-size: 1.25rem;
+//     line-height: 1.4;
+//     }
+// }
