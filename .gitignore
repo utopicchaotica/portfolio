@@ -19,7 +19,8 @@ node_modules/
 
 # Ignore VSCode folders
 */.vscode/
-*/dist/
+# */dist/
+*/res/
 
 # Ignore backups
 */backup/
