@@ -229,7 +229,7 @@ body.dark-mode {
 
 /* Carousel base class */
 .carousel {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 } //.carousel
 
 /* Since positioning the image, we need to help out the caption */
@@ -285,6 +285,14 @@ body.home.lang-fr .main .en {
 body.home.lang-en .main .fr {
     display: none;
 }
+.row {
+    padding: 1rem 0;
+}
+body.home {
+    .row {
+        padding: 0;
+    }
+}
 
 /* About Page */
 body.about {
@@ -296,12 +304,8 @@ body.about {
     }
 
     .team-bios {
-        .row {
-            padding: 1rem 0;
-        }
-
         [class^='col-lg'] {
-            text-align: center;
+            // text-align: center;
             padding-bottom: 2rem;
         }
         .page-title-container {
@@ -311,6 +315,15 @@ body.about {
         .bio-pic {
             width: 200px;
         }
+    }
+}
+
+/* Bios */
+body.page-bio {
+    .bio-pic {
+        width: calc(20rem + .9vw);
+        padding-right: 1.5rem;
+        padding-top: .25rem;
     }
 }
 
