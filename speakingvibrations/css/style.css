@@ -259,10 +259,28 @@ body.about .team-bios .bio-pic {
 }
 
 /* Bios */
+@media (max-width: 767.98px) {
+  body.page-bio .bio-pic-container {
+    display: flex;
+    justify-content: center;
+  }
+}
 body.page-bio .bio-pic {
   width: calc(20rem + 0.9vw);
   padding-right: 1.5rem;
   padding-top: 0.25rem;
+}
+@media (max-width: 767.98px) {
+  body.page-bio .bio-pic {
+    padding: 0 1.5rem 0.5rem;
+    float: none !important;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767.98px) {
+  body.page-bio .page-title {
+    text-align: center;
+  }
 }
 
 /*

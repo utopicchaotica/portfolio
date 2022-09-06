@@ -320,10 +320,28 @@ body.about {
 
 /* Bios */
 body.page-bio {
+    .bio-pic-container {
+        @media (max-width: 767.98px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
     .bio-pic {
         width: calc(20rem + .9vw);
         padding-right: 1.5rem;
         padding-top: .25rem;
+
+        @media (max-width: 767.98px) {
+            padding: 0 1.5rem .5rem;
+            float: none !important;
+            margin: 0 auto;
+        }
+    }
+
+    .page-title {
+        @media (max-width: 767.98px) {
+            text-align: center;
+        }
     }
 }
 
